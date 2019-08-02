@@ -3,6 +3,7 @@ package com.iramarjunior.parrot.modules.authentication.view.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.widget.Toolbar
 import com.iramarjunior.parrot.R
 import kotlinx.android.synthetic.main.activity_sign_up.*
 

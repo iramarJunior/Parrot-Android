@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Parrot</string>
+    <string name="txt_sign_up">Sign Up</string>
     <string name="txt_login">Login</string>
     <string name="txt_email">Email</string>
     <string name="txt_password">Password</string>
     <string name="txt_click_here_to_sign_up">Click here to Sign Up!</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_password_confirmation">Password Confirmation</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_confirm">Confirm</string>
 </resources>
