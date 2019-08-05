@@ -1,10 +1,11 @@
 package com.iramarjunior.parrot.modules.authentication.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.widget.Toolbar
 import com.iramarjunior.parrot.R
+import com.iramarjunior.parrot.modules.post.view.activity.PostActivity
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -14,6 +15,12 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up)
 
         setupView()
+        signUpConfirm()
+    }
+
+    private fun signUpConfirm() {
+
+        startActivity(Intent(this, PostActivity::class.java))
     }
 
     private fun setupView() {

@@ -9,4 +9,11 @@
     <string name="txt_password_confirmation">Password Confirmation</string>
     <string name="txt_username">Username</string>
     <string name="txt_confirm">Confirm</string>
+    <string name="txt_profile_image">Profile Image</string>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_search">Search</string>
+    <string name="txt_what_are_you_feeling">What are you feeling?</string>
 </resources>

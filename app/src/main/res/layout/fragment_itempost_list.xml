@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textImeMultiLine"
+            android:maxLines="3"
+            android:hint="@string/txt_what_are_you_feeling"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:name="com.iramarjunior.parrot.modules.post.view.fragment.ItemPostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".modules.post.view.fragment.ItemPostFragment"
+            tools:listitem="@layout/fragment_itempost">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
