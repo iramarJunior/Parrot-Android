@@ -20,7 +20,10 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun signUpConfirm() {
 
-        startActivity(Intent(this, PostActivity::class.java))
+        buttonSignUpConfirm.setOnClickListener {
+            startActivity(Intent(this@SignUpActivity, PostActivity::class.java))
+            finish()
+        }
     }
 
     private fun setupView() {

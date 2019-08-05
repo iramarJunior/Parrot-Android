@@ -3,7 +3,6 @@ package com.iramarjunior.parrot.modules.authentication.business
 import android.util.Patterns
 import com.iramarjunior.parrot.core.SessionController
 import com.iramarjunior.parrot.core.network.BaseNetwork.Companion.HEADER_ACCESS_TOKEN
-import com.iramarjunior.parrot.core.network.BaseNetwork.Companion.HEADER_CLIENT
 import com.iramarjunior.parrot.modules.authentication.database.AuthenticationDatabase
 import com.iramarjunior.parrot.modules.authentication.model.SessionAuthentication
 import com.iramarjunior.parrot.modules.authentication.network.AuthenticationNetwork
@@ -59,13 +58,11 @@ object AuthenticationBusiness {
                 val user = response.body()?.data
 
                 val sessionAuth = SessionAuthentication().apply {
-                    uid = user?.uid ?: ""
                     accessToken = response.headers()[HEADER_ACCESS_TOKEN] ?: ""
-                    client = response.headers()[HEADER_CLIENT] ?: ""
                 }
 
                 if (!sessionAuth.isSessionAuthenticated() && user != null) {
-                    onError("Falha ao autenticar usuário")
+                    onError("Fail on authentication!")
                     return@requestLogin
                 }
 

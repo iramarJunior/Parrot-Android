@@ -15,12 +15,9 @@ abstract class BaseNetwork {
 
     companion object {
 
-        const val BASE_URL = "http://200.19.188.7:3010/"
+        const val BASE_URL = "http://200.19.188.7:3010"
 
-        const val HEADER_UID = "uid"
         const val HEADER_ACCESS_TOKEN = "Access-Token"
-        const val HEADER_CLIENT = "Client"
-
     }
 
     enum class RequestStatus { STARTED, FINISHED }
